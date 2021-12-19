@@ -1,3 +1,5 @@
 *.ini
 .bash_history
 *.lock
+.python_history
+.ipynb_checkpoints
