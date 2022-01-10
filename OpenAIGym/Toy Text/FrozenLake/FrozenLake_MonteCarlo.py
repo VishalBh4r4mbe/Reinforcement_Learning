@@ -32,8 +32,9 @@ for i in range(episodes):
     for state, action in resultList:
         countSA[state, action] += 1
         Q[state, action] = Q[state, action] + (1.0/countSA[state, action])*(reward - Q[state, action])
-    if i % 100 == 0:
+    if i % 10000 == 0:
         print("Success Rate = ",np.mean(rewardList)," Epsilon = ",epsilon)
+        rewardList = []
 print(np.argmax(Q, axis=1))
 print("Average Reward: {}".format(np.mean(rewardList)))
 print("Std Reward: {}".format(np.std(rewardList)))
