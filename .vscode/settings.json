@@ -1,0 +1,8 @@
+{
+    "jupyter.kernels.filter": [
+        {
+            "path": "~\\.julia\\conda\\3\\python.exe",
+            "type": "pythonEnvironment"
+        }
+    ]
+}
